@@ -4,6 +4,19 @@
 from sys import argv
 from os.path import exists
 
+# interrupting for keyboard input
+print "Who are you?",
+name = raw_input()
+
+print "Where are you come from?",
+where = raw_input()
+print "Hello, %s of %s" %(name, where)
+
+######################
+# manipulate file  ###
+######################
+
+# command line args
 script, from_file, to_file = argv
 
 print "Copying from %s to %s" % (from_file, to_file)
@@ -25,3 +38,5 @@ print "Alright, all done."
 
 out_file.close()
 in_file.close()
+
+# python keyboard.input.py2.py file1 file2
